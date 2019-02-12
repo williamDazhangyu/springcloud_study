@@ -1,0 +1,7 @@
+
+## 注册中心网关配置
+eureka:
+    instance:
+        preferIpAddress: true
+        instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+        hostname: ${spring.application.name}
